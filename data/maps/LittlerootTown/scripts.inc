@@ -41,7 +41,7 @@ LittlerootTown_MapScripts::
 LittlerootTown_EventScript_TestTrigger::
 	lockall
 	msgbox LittlerootTown_EventScript_TestTrigger_Text_0
-	applymovement MyMovement
+	applymovement OBJ_EVENT_ID_PLAYER, MyMovement
 	waitmovement 0
 	releaseall
 	return
