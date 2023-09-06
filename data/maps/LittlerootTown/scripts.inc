@@ -38,6 +38,19 @@ LittlerootTown_MapScripts::
 	@ 3: Met Rival
 	@ 4: Received Pokedex
 
+LittlerootTown_EventScript_TestTrigger::
+	lockall
+	msgbox LittlerootTown_EventScript_TestTrigger_Text_0
+	walk_down
+	waitmovement 0
+	releaseall
+	return
+
+
+LittlerootTown_EventScript_TestTrigger_Text_0:
+	.string "It's a test.$"
+
+
 
 LittlerootTown_OnTransition:
 	setflag FLAG_VISITED_LITTLEROOT_TOWN
