@@ -41,11 +41,19 @@ LittlerootTown_MapScripts::
 LittlerootTown_EventScript_TestTrigger::
 	lockall
 	msgbox LittlerootTown_EventScript_TestTrigger_Text_0
-	walk_down
+	applymovement MyMovement
 	waitmovement 0
 	releaseall
 	return
 
+
+MyMovement:
+	walk_down
+	walk_down
+	walk_right
+	walk_right
+	walk_right
+	step_end
 
 LittlerootTown_EventScript_TestTrigger_Text_0:
 	.string "It's a test.$"
