@@ -41,6 +41,7 @@ LittlerootTown_MapScripts::
 LittlerootTown_EventScript_TestTrigger::
 	lockall
 	msgbox LittlerootTown_EventScript_TestTrigger_Text_0
+	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, MyMovement
 	waitmovement 0
 	releaseall
@@ -58,6 +59,17 @@ MyMovement:
 LittlerootTown_EventScript_TestTrigger_Text_0:
 	.string "It's a test.$"
 
+
+LittlerootTown_Sign_Test::
+	lockall
+	msgbox LittlerootTown_Sign_Test_Text_0
+	closemessage
+	releaseall
+	return
+
+
+LittlerootTown_Sign_Test_Text_0:
+	.string "Hello, i'm a sign.$"
 
 
 LittlerootTown_OnTransition:
