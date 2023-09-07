@@ -5,7 +5,6 @@ Route99_MapScripts::
 Route99_Collectible0::
 	lockall
 	giveitem ITEM_POTION
-	playfanfare MUS_OBTAIN_ITEM
 	removeobject 1
 	setflag FLAG_UNUSED_0x020
 	waitmessage
@@ -22,7 +21,7 @@ Route99_HouseSign0::
 
 
 Route99_HouseSign0_Text_0:
-	.string "The sign is in poor condition, impossible to read what has been written.$"
+	.string "The sign is in poor condition, impossible\nto read what has been written.$"
 
 Route99_TrainerEncounter0::
 	lockall
