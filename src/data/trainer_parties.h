@@ -12434,3 +12434,16 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayLinkPlaceholder[] = {
     .species = SPECIES_KYOGRE,
     }
 };
+
+static const struct TrainerMonNoItemDefaultMoves sParty_Domo0[] = {
+    {
+    .iv = 30,
+    .lvl = 10,
+    .species = SPECIES_MAKUHITA,
+    },
+    {
+    .iv = 30,
+    .lvl = 15,
+    .species = SPECIES_MACHOP,
+    }
+};

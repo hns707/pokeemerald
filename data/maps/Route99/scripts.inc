@@ -6,17 +6,37 @@ Route99_Collectible0::
 	lockall
 	giveitem ITEM_POTION
 	playfanfare MUS_OBTAIN_ITEM
-	msgbox Route99_Collectible0_Text_0
 	removeobject 1
 	setflag FLAG_UNUSED_0x020
-	msgbox Route99_Collectible0_Text_1
 	waitmessage
 	releaseall
 	end
 
 
-Route99_Collectible0_Text_0:
-	.string "You found POTION!$"
+Route99_HouseSign0::
+	lockall
+	msgbox Route99_HouseSign0_Text_0
+	closemessage
+	releaseall
+	return
 
-Route99_Collectible0_Text_1:
-	.string "Added to the inventory.$"
+
+Route99_HouseSign0_Text_0:
+	.string "The sign is in poor condition, impossible to read what has been written.$"
+
+Route99_TrainerEncounter0::
+	lockall
+	trainerbattle_single TRAINER_DOMO_0, Domo0_Intro, Domo0_Outro
+	msgbox Domo0_PostBattle, MSGBOX_AUTOCLOSE
+	waitmessage
+	end
+
+
+Domo0_Intro::
+	.string "What a nice time to train! Let's battle!$"
+
+Domo0_Outro::
+	.string "It was a nice fight!$"
+
+Domo0_PostBattle::
+	.string "I'm exhausted! I will rest a bit.$"
