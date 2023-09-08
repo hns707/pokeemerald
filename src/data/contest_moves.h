@@ -2832,6 +2832,13 @@ const struct ContestMove gContestMoves[MOVES_COUNT] =
         .comboStarterId = 0,
         .comboMoves = {COMBO_STARTER_CALM_MIND},
     },
+    [MOVE_PUNISHING_BLAST] =
+    {
+        .effect = CONTEST_EFFECT_MAKE_FOLLOWING_MONS_NERVOUS,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .comboStarterId = 0,
+        .comboMoves = {COMBO_STARTER_KINESIS, COMBO_STARTER_CONFUSION, COMBO_STARTER_CALM_MIND},
+    },
 };
 
 const struct ContestEffect gContestEffects[] =
@@ -3124,6 +3131,7 @@ const struct ContestEffect gContestEffects[] =
         .appeal = 30,
         .jam = 0,
     },
+    
 };
 
 // A lookup table with TRUE for each combo starter ID and FALSE for ID 0,
