@@ -1419,7 +1419,7 @@ static const u8 sPsychoBoostDescription[] = _(
 
 static const u8 sPunishingBlastDescription[] = _(
     "Fire a deadly energy wave\n"
-    "that may lower SP. DEF.");
+    "and lower foe's SP. DEF.");
 
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
@@ -1778,4 +1778,5 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_WATER_PULSE - 1] = sWaterPulseDescription,
     [MOVE_DOOM_DESIRE - 1] = sDoomDesireDescription,
     [MOVE_PSYCHO_BOOST - 1] = sPsychoBoostDescription,
+    [MOVE_PUNISHING_BLAST - 1] = sPunishingBlastDescription,
 };
