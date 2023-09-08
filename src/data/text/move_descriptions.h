@@ -1417,7 +1417,7 @@ static const u8 sPsychoBoostDescription[] = _(
     "Allows a full-power attack,\n"
     "but sharply lowers SP. ATK.");
 
-static const u8 sPunishingBlastDescription[] = _(
+static const u8 sPunishBlastDescription[] = _(
     "Fire a deadly energy wave\n"
     "and lower foe's SP. DEF.");
 
@@ -1778,5 +1778,5 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_WATER_PULSE - 1] = sWaterPulseDescription,
     [MOVE_DOOM_DESIRE - 1] = sDoomDesireDescription,
     [MOVE_PSYCHO_BOOST - 1] = sPsychoBoostDescription,
-    [MOVE_PUNISHING_BLAST - 1] = sPunishingBlastDescription,
+    [MOVE_PUNISH_BLAST - 1] = sPunishBlastDescription,
 };
