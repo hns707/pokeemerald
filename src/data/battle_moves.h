@@ -4617,7 +4617,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_PUNISH_BLAST] =
     {
         .effect = EFFECT_SPECIAL_DEFENSE_DOWN_HIT,
-        .power = 200,
+        .power = 150,
         .type = TYPE_PSYCHIC,
         .accuracy = 80,
         .pp = 5,

@@ -6414,8 +6414,12 @@ Move_PUNISH_BLAST:
 	delay 9
 	call PsybeamRings
 	delay 5
+	call SetSolarBeamBg
 	createvisualtask AnimTask_SwayMon, 5, 0, 6, 2048, 4, ANIM_TARGET
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 2, 2, 0, 12, RGB(200, 200, 100)
+	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 2, 2, 0, 12, RGB_WHITE
+	call PsybeamRings
+	call PsybeamRings
+	call PsybeamRings
 	call PsybeamRings
 	call PsybeamRings
 	call PsybeamRings
@@ -6429,7 +6433,8 @@ Move_PUNISH_BLAST:
 	call PsybeamRings
 	call PsybeamRings
 	waitforvisualfinish
-	delay 10
+	delay 1
+	call UnsetSolarBeamBg
 	end
 
 Move_FLY:
