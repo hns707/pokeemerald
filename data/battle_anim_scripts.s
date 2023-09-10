@@ -6407,11 +6407,15 @@ Move_PUNISH_BLAST:
 	playsewithpan SE_M_PSYBEAM, SOUND_PAN_ATTACKER
 	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_PSYBEAM2, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 3, 4, 0, 15
 	call PsybeamRings
+	delay 15
 	call PsybeamRings
 	createvisualtask AnimTask_SwayMon, 5, 0, 6, 2048, 4, ANIM_TARGET
 	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 2, 2, 0, 12, RGB(31, 18, 31)
+	delay 12
 	call PsybeamRings
+	delay 9
 	call PsybeamRings
+	delay 5
 	call PsybeamRings
 	call PsybeamRings
 	call PsybeamRings
@@ -6428,7 +6432,7 @@ Move_PUNISH_BLAST:
 	call PsybeamRings
 	call PsybeamRings
 	waitforvisualfinish
-	delay 1
+	delay 10
 	end
 
 Move_FLY:
