@@ -6409,16 +6409,13 @@ Move_PUNISH_BLAST:
 	call PsybeamRings
 	delay 15
 	call PsybeamRings
-	createvisualtask AnimTask_SwayMon, 5, 0, 6, 2048, 4, ANIM_TARGET
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 2, 2, 0, 12, RGB(31, 18, 31)
 	delay 12
 	call PsybeamRings
 	delay 9
 	call PsybeamRings
 	delay 5
-	call PsybeamRings
-	call PsybeamRings
-	call PsybeamRings
+	createvisualtask AnimTask_SwayMon, 5, 0, 6, 2048, 4, ANIM_TARGET
+	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 2, 2, 0, 12, RGB(200, 200, 100)
 	call PsybeamRings
 	call PsybeamRings
 	call PsybeamRings
